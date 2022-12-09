@@ -1,0 +1,129 @@
+<!DOCYTPE html>
+<html>
+<head>
+<title>read more
+</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+background-color: #f5f7f9;
+font-family: Open Sans,sans-serif;
+margin-left: 20px;
+}
+img{
+width: 100%;
+border-radius: 8px;
+margin-bottom: 25px;
+}
+
+.box{
+width: 30%;
+float: left;
+margin: 50px 20px;
+padding: 15px;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+}
+.box h4{
+margin-bottom: 10px;
+}
+.box p{
+font-sixe: 15px;
+line-height: 28px;
+height: 50px;
+overflow: hidden;
+}
+.box a{
+display: inline-block;
+color: #fff;
+background-color: #2196f3;
+text-decoration: none;
+padding:10px 15px;
+border-radius:8px;
+margin-top: 15px;
+}
+.box a:hover{
+box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.box.showContent p{
+height: auto;
+}
+.box.showContent a.readmore-btn{
+background-color: #a52a2a;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<img src=" firstimg.jpg " alt=" ">
+<h4><u>5 Tips for Healthier Eating</u></h4>
+<p>Our fitness expert Rosie has put together these 5 tips to help you eat better. Just because you're cooking quick, cheap and easy doesn't mean you can't be healthy too.
+I eat is not putting the food on the table, instead, by serving myself in the kitchen I am less tempted to add food to my plate.<br>
+1 - Control Your Portion Sizes<br>
+2 - Make The Right Choices<br>
+3 - Be Cautious of Fad Diets<br>
+4 - Use Supplements Properly<br>
+5 - Think About Alcohol
+</p>
+<a href="#" class="readmore-btn"> Read More</a>
+
+</div>
+<div class="box">
+<img src=" secimg.jpg " alt=" ">
+<h4><u>Brain Foods For Revision and Exams</u></h4>
+<p>Exam season is here and if you’re a student, you’re probably spending lots of time revising, writing,
+reading (and stressing). Food is probably not the top of your priorities right now, but grabbing some of these
+snacks while you’re working could boost your productivity, energy and concentration.<br>
+1.Oats / Porridge<br>Oats provide slow-burning energy to keep you going throughout the day- whether
+ you kick off the morning with a bowl of porridge, whip up some flapjacks or blend them up in a smoothie.<br>
+2.Blueberries<br>
+3.Nuts and Fruits<br>4.Chocolate<br>5.Green Things<br>6.Avocado</p>
+<a href="#" class="readmore-btn"> Read More</a>
+</div>
+<div class="box">
+<img src=" thirdimg.jpg " alt=" ">
+<h4><u>Essential Ingredients to Keep in Your Uni Kitchen</u></h4>
+<p>There’s a few basic ingredients which you’re going to need regularly if you start cooking your own food. 
+Here’s our list of things to keep on hand for when you next need to cook:<br>
+<u>Chopped tomatoes</u>:Grab a couple of tins next time you’re at the supermarket. 
+They can be used in loads of recipes, including this sausage casserole or this spicy chicken curry.<br>
+<u>Onions</u><br><u>Pasta</u><br><u>Baked Beans</u><br><u>Rice</u>
+‍</p>
+<a href="#" class="readmore-btn"> Read More</a>
+</div>
+<div class="box">
+<img src=" fourthimg.jpg " alt=" ">
+<h4><u>A Quick Guide to Saving Money on Food at Uni</u></h4>
+<p>We know that most students don’t have a lot of money while they’re at uni, 
+so we’ve put together this list to help you save cash when buying food.
+<br>Look for cheaper brands<br>Buy in larger quantities<br>Find cheap supermarkets<br>Don’t shop when you’re hungry</p>
+<a href="#" class="readmore-btn"> Read More</a>
+</div>
+<div class="box">
+<img src=" fifthimg.jpg " alt=" ">
+<h4><u>5 Simple Recipes to Practice Before Starting Uni</u></h4>
+<p>Cheesy Pesto Pasta Bake<br>Spicy Chicken Curry<br>Chicken Noodle Stir-Fry
+<br>Cheesy Bean Quesadillas.<br>Let us know how you get on making these recipes, and
+share your photos with us on twitter. If you have any questions, feel free to drop them
+in the comments section below.</p>
+<a href="#" class="readmore-btn"> Read More</a>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+</script>
+<script>
+
+$(".readmore-btn").on('click',function(){
+$(this).parent().toggleClass("showContent");
+
+var replaceText = $(this).parent().hasClass("showContent") ? "Read Less" : "Read More";
+$(this).text(replaceText);
+});
+
+</script>
+</body>
+</html>
